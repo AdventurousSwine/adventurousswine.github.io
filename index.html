@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+    <header>
+        <div id="particles"></div>
+        <div class="info-text">
+            <h1>Akram M. Moaz</h1>
+            <h3>B.S., Psychology</h3>
+            <h3>A.A.S., Information Technology - Cyber Security</h3>
+            <a href="#about" class="scroll"><i class='bx bxs-down-arrow'></i></a>
+        </div>
+    </header>
+    <section id="about">
+        <div class="header">
+            <h1>About Me</h1>
+            <a href="resume.pdf" download="resume">Download My Resume!</a>
+        </div>
+        <div class="card">
+            <img src="logo.png">
+            <div class="info">
+                <h1>Hi, I'm Akram!</h1>
+                    <ul>
+                        <li>5 years of python development experience.</li>
+                        <li>8 years of management experience across several teams tasked with development and engagement of several communities of varying sizes ranging from several hundred to several million.</li>
+                        <li>Currently preparing for CompTIA Network+ and Security+ exams</li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <section id="features">
+        <div class="header">
+            <h1>Featured Projects</h1>
+            <a href="https://github.com/AdventurousSwine" target="_blank">See More On GitHub!</a>
+        </div>
+        <div class="feature-cards">
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-devices'></i>
+                    <h1>Daily Affirmation Bot</h1>
+                    <p>
+                       A small bot that provides affirmations to various users anywhere between 1 hour and 5 days. 
+                    </p>
+                    <pre id="code-block-1" class="code-container"><code class="language-python"></code></pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bx-code-alt'></i>
+                    <h1>Valorant Team Splitter</h1>
+                    <p>
+                        A small bot that users join using a command that will then divide all of the users into two teams.
+                    </p>
+                    <pre id="code-block-2" class="code-container"><code class="python"></code></pre>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <i class='bx bxs-component'></i>
+                    <h1>Password Manager</h1>
+                    <p>
+                        A password manager that also features a password generator and uses encryption.
+                    </p>
+                    <pre id="code-block-3" class="code-container"><code class="python"></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class='bx bxs-up-arrow'></i>
+    </button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
