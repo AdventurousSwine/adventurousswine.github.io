@@ -93,7 +93,7 @@ function loadCode(filePath, elementId) {
     fetch(filePath)
         .then(response => response.text())
         .then(code => {
-            document.getElementById(elementId).textContent = code;
+            document.getElementById(elementId).innerHTML = `<pre><code class="language-python">${code}</code></pre>`;
         })
         .catch(error => console.error('Error loading code from ${file}:', error));
 }
