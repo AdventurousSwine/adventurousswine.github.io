@@ -1,14 +1,12 @@
 import discord
 from discord.ext import commands
 from affirmtoken import Token
-from Personal.website.assets.snippits.affirm import affirm
-from Personal.website.assets.snippits.affirm import names
 import random
 import asyncio
 
 bot = commands.Bot(command_prefix = "$", case_insensitive = True, intents = discord.Intents.all())
 
-channels = [1297291502023741580]  # put IDs here
+channels = []  # put IDs here
 minute_bounds = (1*60, 432000) # 10s to 60s, change this (1m - 1h)
 stop = False
 
