@@ -234,6 +234,57 @@ header .info-text .scroll::before{
     font-size: 1.1rem;
 }
 
+#contact {
+    background-color: #2b2f4b;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+#contact .header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #1e2133;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #2b2f4b;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    border-color: #fff;
+}
+
 .scroll-top{
     display: none;
     position: fixed;
