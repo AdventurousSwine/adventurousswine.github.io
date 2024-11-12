@@ -101,3 +101,22 @@ function loadCode(filePath, elementId) {
 loadCode('snippets/affirm.py', 'code-block-1');
 loadCode('snippets/wheelie.py', 'code-block-2');
 loadCode('snippets/password.py', 'code-block-3');
+
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const formData = new FormData(this);
+    const formObject = {};
+    formData.forEach((value, key) => { formObject[key] = value });
+    
+    const response = await fetch('https://peaceful-ridge-02518-1499c3f9dc27.herokuapp.com/send_email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formObject)
+    });
+
+    const result = await response.json();
+    alert(result.message);
+});
